@@ -45,8 +45,7 @@ function deleteLastCharacter() {
 
 // Add variable
 function addVariable() {
-    let name = document.getElementById('varName').value.trim();
-    let value = parseFloat(document.getElementById('varValue').value.trim());
+    
 
     if (name === 'pi' || name === 'e') {
         alert("Cannot use names 'pi' or 'e' for variables.");
