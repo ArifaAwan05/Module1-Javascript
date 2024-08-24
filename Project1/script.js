@@ -43,25 +43,6 @@ function deleteLastCharacter() {
     }
 }
 
-// Add variable
-function addVariable() {
-    
-
-    if (name === 'pi' || name === 'e') {
-        alert("Cannot use names 'pi' or 'e' for variables.");
-        return;
-    }
-
-    if (!isNaN(value)) {
-        variables[name] = value;
-        document.getElementById('varName').value = '';
-        document.getElementById('varValue').value = '';
-        alert(`Variable ${name} added with value ${value}`);
-    } else {
-        alert('Invalid value for variable.');
-    }
-}
-
 // Evaluate the expression
 function evaluateExpression(expression) {
     // Replace variable names with their values
