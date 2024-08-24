@@ -1,0 +1,33 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+#calculator {
+  max-width: 400px;
+  margin: 20px auto;
+}
+#display {
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+.buttons button {
+  height: 50px;
+  font-size: 18px;
+}
+#variables {
+  margin-top: 20px;
+}
+#variables input {
+  margin: 5px 0;
+}
