@@ -5,8 +5,6 @@ let isResultDisplayed = false; // Flag to track if a result has been displayed
 const PI = 3.1416;
 const E = 2.7182;
 
-// Variable storage
-let variables = {};
 
 // Update display function
 function updateDisplay(value) {
@@ -40,24 +38,6 @@ function deleteLastCharacter() {
     if (currentValue.length > 0) {
         // Remove the last character
         display.value = currentValue.slice(0, -1);
-    }
-}
-
-// Add variable
-function addVariable() {
-    
-    if (name === 'pi' || name === 'e') {
-        alert("Cannot use names 'pi' or 'e' for variables.");
-        return;
-    }
-
-    if (!isNaN(value)) {
-        variables[name] = value;
-        document.getElementById('varName').value = '';
-        document.getElementById('varValue').value = '';
-        alert(`Variable ${name} added with value ${value}`);
-    } else {
-        alert('Invalid value for variable.');
     }
 }
 
